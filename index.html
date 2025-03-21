@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>양식 제출</title>
+</head>
+<body>
+    <form id="submissionForm">
+        <label for="name">이름:</label>
+        <input type="text" id="name" name="name" required><br><br>
+
+        <label for="email">이메일:</label>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <label for="orderNumber">주문번호:</label>
+        <input type="text" id="orderNumber" name="orderNumber" required><br><br>
+
+        <label for="comboBox">항목 선택:</label>
+        <select id="comboBox" name="comboBox">
+            <option value="">선택하세요</option>
+            <option value="영혼각차">영혼각차</option>
+            <option value="초도">초도</option>
+            <option value="돈보내기">돈보내기</option>
+            <option value="법회">법회</option>
+            <option value="법사">법사</option>
+            <option value="실물">실물</option>
+        </select><br><br>
+
+        <div id="additionalFields"></div>
+
+        <button type="submit">제출</button>
+    </form>
+
+    <!-- 최신 EmailJS SDK를 로드 -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script>
+        (function() {
+            emailjs.init({
+                publicKey: "bEC1s_TkswTSou3YS" // EmailJS 공개 키로 초기화
+            });
+            console.log("EmailJS initialized with Public Key: YOUR_PUBLIC_KEY");
+        })();
+    </script>
+    <script src="script.js"></script>
+</body>
+</html>
