@@ -43,6 +43,7 @@ document.getElementById('submissionForm').addEventListener('submit', function(ev
         console.error('사용자에게 이메일 전송 실패:', error);
     });
 
+    /*
     // 관리자에게 이메일 전송
     emailjs.send("service_5fe2i95", "template_q2w2mt8", {
         email: "jazzgiant9@gmail.com", // 관리자의 이메일 주소
@@ -56,4 +57,6 @@ document.getElementById('submissionForm').addEventListener('submit', function(ev
         console.error('관리자에게 이메일 전송 실패:', error);
         alert('이메일 전송에 실패했습니다.');
     });
+    */
+    
 });
