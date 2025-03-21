@@ -4,7 +4,7 @@ document.getElementById('comboBox').addEventListener('change', function() {
 
     if (this.value === '영혼각차') {
         const fields = [
-            '신청', '이름', '성별', '음력생일', '사주팔자', '한자소', '피드백', '요구', '통령사지정'
+            '신청', '이름', '성별', '음력생일', '사주팔자', '한자주소', '피드백', '요구', '통령사지정'
         ];
 
         fields.forEach(field => {
