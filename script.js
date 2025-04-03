@@ -39,6 +39,7 @@ document.getElementById('submissionForm').addEventListener('submit', function(ev
         message: emailContent // 폼 데이터 내용
     }).then(function(response) {
         console.log('사용자에게 이메일 전송 성공:', response);
+        alert('이메일 전송이 완료되었습니다!');
     }, function(error) {
         console.error('사용자에게 이메일 전송 실패:', error);
     });
